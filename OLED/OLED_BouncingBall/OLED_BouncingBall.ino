@@ -28,7 +28,6 @@ void setup() {
     balls[i].bx = random(-100,0);
     balls[i].by = random(-50,0);
     balls[i].velocityY = 0;
-    
   }
 }
 
