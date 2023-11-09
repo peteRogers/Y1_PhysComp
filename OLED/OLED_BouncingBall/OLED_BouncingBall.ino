@@ -18,8 +18,6 @@ struct Ball {
 Adafruit_SSD1306 display(128, 64, &Wire, -1);
 Ball balls[10];
 
-
-
 void setup() {
   Serial.begin(9600);
   display.begin(SSD1306_SWITCHCAPVCC, 0x3D);
@@ -37,8 +35,8 @@ void loop() {
   for(int i = 0; i < 10; i++){
 
       balls[i].bx += 2;
-    balls[i].by += balls[i].velocityY;
-    balls[i].velocityY += GRAVITY;
+      balls[i].by += balls[i].velocityY;
+      balls[i].velocityY += GRAVITY;
 
 
 
