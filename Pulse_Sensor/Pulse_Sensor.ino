@@ -26,7 +26,6 @@ void loop() {
       fred = (double)red;
       avered = avered * frate + (double)red * (1.0 - frate);  //average red level by low pass filter
       float red_forGraph = (2.0 * fred - avered) / avered * SCALE;
-
       if (checkForBeat(round(red_forGraph * 100))) {
         Serial.println("beat");
       }
