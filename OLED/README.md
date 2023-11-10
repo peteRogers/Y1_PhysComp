@@ -8,4 +8,11 @@ OLED uses the adafruit GFX library for doing drawing commands. [GFX Library Docu
 #### Wiring Labelling for OLED
 ![alt text](https://github.com/peteRogers/Y1_PhysComp/blob/main/OLED/i2cGraphic.jpg "i2c graphics")
 
+#### Draw Image to Screen
+```java
+  display.clearDisplay();
+  display.drawBitmap(0, 0,  eye2, 128, 64, WHITE);
+  display.display();
+```
+
 
