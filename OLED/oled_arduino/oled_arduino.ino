@@ -2,11 +2,12 @@
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
-#include "bitmaps.h";
+#include "bitmaps.h"
 
-
-#define SCREEN_ADDRESS 0x3D ///< See datasheet for Address; 0x3D for 128x64, 0x3C for 128x32
-Adafruit_SSD1306 display(128, 64, &Wire, -1);
+#define screenWidth 128
+#define screenHeight 64
+#define SCREEN_ADDRESS 0x3D  ///< See datasheet for Address; 0x3D for 128x64, 0x3C for 128x32
+Adafruit_SSD1306 display(screenWidth, screenHeight, &Wire, -1);
 
 
 
@@ -19,7 +20,7 @@ void setup() {
 
 void loop() {
   display.clearDisplay();
+  //drawing code here
   display.display();
   delay(100);
- 
 }
