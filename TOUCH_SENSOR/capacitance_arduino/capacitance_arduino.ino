@@ -11,7 +11,7 @@ void setup() {
   Serial.begin(115200);
   //Serial.println("Adafruit MPR121 Capacitive Touch sensor test"); 
   if (!cap.begin(0x5A)) {
-   // Serial.println("MPR121 not found, check wiring?");
+      Serial.println("MPR121 not found, check wiring?");
     while (1);
   }
   
