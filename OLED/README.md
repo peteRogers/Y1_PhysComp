@@ -1,9 +1,11 @@
 # OLED Displays
 
-#### Here are files supporting using OLED displays with Arduino. 
+#### Here are files supporting using OLED displays with Arduino.
+OLED uses the adafruit GFX library for doing drawing commands. [GFX Library Documentation](https://cdn-learn.adafruit.com/downloads/pdf/adafruit-gfx-graphics-library.pdf)
+
 Web link to convert images to show on screens [Make BITMAP IMAGES](https://javl.github.io/image2cpp/)
 
-OLED uses the adafruit GFX library for doing drawing commands. [GFX Library Documention](https://cdn-learn.adafruit.com/downloads/pdf/adafruit-gfx-graphics-library.pdf)
+Get animated icons and emojis to show on OLED [WOKWI animator](https://animator.wokwi.com/)
 
 #### Wiring Labelling for OLED
 ![alt text](https://github.com/peteRogers/Y1_PhysComp/blob/main/OLED/i2cGraphic.jpg "i2c graphics")
